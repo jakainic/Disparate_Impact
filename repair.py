@@ -4,7 +4,8 @@ import math
 from statistics import median_low
 from repair_help import *
 
-#FOR NOW: everything is with a single, binary protected variable, so don't have to worry (e.g.) about stratifying with respect to several protected classes
+#FOR NOW: everything is with a single, binary protected variable, so don't have to worry (e.g.) about 
+#stratifying with respect to several protected classes
 
 #geometric repair with binning for target distribution
 def binned_repair_all_geo(data,protected_feat,degree):
