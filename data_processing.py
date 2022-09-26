@@ -2,6 +2,11 @@ import pandas as pd
 import numpy as np
 import csv
 
+#drop protected features that we aren't repairing
+#drop columns that don't have a natural ordering
+#encode qualitative feats into their corresponding numerical values
+#normalize
+
 #protected feats is dict with keys: (target_header, target_maj_class, target_min_classes, other)
 #outcomes is dict with keys: (header, preferred, other)
 def process_data(data, protected_feats, cat_orderings, unordered_cols, outcomes):
