@@ -1,6 +1,10 @@
 import pandas as pd
 import numpy as np
 
+#a bit messy, but essentially this is all the information the data processing function needs to get rid of some columns
+#and encode others as numbers
+#also, reading the data
+
 path = 'german_credit.csv'
 protected_feats = {"target_header": "age", "target_maj_class": "old", "target_min_classes": "young","other": ["personal_status"]}
 cat_orderings = {'checking_status': [('no checking',0), ('<0',1), ('0<=X<200',2), ('>=200',3)], 
