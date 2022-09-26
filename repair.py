@@ -44,18 +44,16 @@ def binned_repair_all_comb2(data, protected_feat, degree):
 	return new_data
 
 #repair towards distribution that is a Wasserstein-1 barycenter
-def OT_repair_all(data, protected_feat, degree, type_of_repair):
-	new_data = pd.DataFrame()
+#def OT_repair_all(data, protected_feat, degree, type_of_repair):
+#	new_data = pd.DataFrame()
 
-	for col in data.columns:
-		if col!= protected_feat:
-			new_data[col] = OT_repair_col(data,col, protected_feat,degree,type_of_repair)
-		if col == protected_feat:
-			new_data[col] = data[col]
+#	for col in data.columns:
+#		if col!= protected_feat:
+#			new_data[col] = OT_repair_col(data,col, protected_feat,degree,type_of_repair)
+#		if col == protected_feat:
+#			new_data[col] = data[col]
 
-	return new_data
-
-###
+#	return new_data
 
 def binned_repair_col_geo(data,feat_to_repair,protected_feat,degree):
 	gps = [-1,1]
