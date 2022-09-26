@@ -131,6 +131,4 @@ def binned_repair_col_comb2(data,feat_to_repair,protected_feat,degree):
 
 	return repair_col
 
-def OT_repair_col(data, feat_to_repair, protected_feat, degree, type_of_repair):
-	#obviously needs to be fixed
-	return data[feat_to_repair]
+#def OT_repair_col(data, feat_to_repair, protected_feat, degree, type_of_repair):
