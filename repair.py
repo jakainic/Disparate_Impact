@@ -18,8 +18,7 @@ def binned_repair_all_geo(data,protected_feat,degree):
 
 	return new_data
 
-#Get position from all valid values for an attribute from what is in the quantile
-#and median for quantile selected from representative medians
+#Get positions of old value, quatile median, new value from all valid values for an attribute *from what is in the quantile*
 def binned_repair_all_comb1(data, protected_feat, degree):
 	new_data = pd.DataFrame()
 
@@ -31,7 +30,7 @@ def binned_repair_all_comb1(data, protected_feat, degree):
 
 	return new_data
 
-#Get position from all valid values for an attribute (but still look at median from representative medians in quantile)
+#Get positions from all valid values for an attribute
 def binned_repair_all_comb2(data, protected_feat, degree):
 	new_data = pd.DataFrame()
 
